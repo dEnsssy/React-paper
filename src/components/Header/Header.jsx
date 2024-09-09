@@ -1,6 +1,6 @@
 import styles from "./Heder.module.scss";
 import Logo from "/src/assets/img/PC/Logo.svg";
-import Search from "/src/assets/img/Others/search.svg";
+import Search from "/src/assets/img/Others/Search.svg";
 import LogIn from "/src/assets/img/Others/login.svg";
 
 export default function Header() {
