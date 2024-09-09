@@ -1,0 +1,45 @@
+@import "/src/assets/styles/_vars.scss";
+
+.button {
+    display: flex;
+    width: 255px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    color: $btnColor;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid $btnColor;
+
+    transition: all 0.2s ease-out;
+}
+
+.button:hover {
+    background-color: $btnColor;
+    color: white;
+}
+
+.button:focus {
+    color: $btnColor;
+    background-color: #dad9fb;
+}
+
+.button:active {
+    color: white;
+    background-color: #4946b4;
+}
+@media (max-width: 576px) {
+    .button {
+        width: 196px;
+        height: 60px;
+    }
+}
+@media (max-width: 320px) {
+    .button {
+        width: 144px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
