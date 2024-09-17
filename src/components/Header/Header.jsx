@@ -2,8 +2,8 @@ import styles from "./Heder.module.scss";
 import Logo from "/src/assets/img/PC/Logo.svg";
 import Search from "/src/assets/img/Others/Search.svg";
 import LogIn from "/src/assets/img/Others/login.svg";
-import burgerOpen from "../../assets/img/Mobile/burgerOpen.svg";
-import burgerClose from "../../assets/img/Mobile/burgerClose.svg";
+import burgerOpen from "/src/assets/img/Mobile/burgerOpen.svg";
+import burgerClose from "/src/assets/img/Mobile/burgerClose.svg";
 import { useEffect, useState } from "react";
 import HeaderList from "./HeaderList/HeaderList";
 
