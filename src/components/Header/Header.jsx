@@ -11,13 +11,13 @@ export default function Header() {
     const [isActive, setIsActive] = useState(false);
     useEffect(() => {
         if (isActive) {
-            document.body.style.overflow = "hidden";
+            document.body.style.overflowY = "hidden";
         } else {
-            document.body.style.overflow = "";
+            document.body.style.overflowY = "";
         }
 
         return () => {
-            document.body.style.overflow = "";
+            document.body.style.overflowY = "";
         };
     }, [isActive]);
 
