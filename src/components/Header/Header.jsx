@@ -2,12 +2,13 @@ import styles from "./Heder.module.scss";
 import Logo from "/src/assets/img/PC/Logo.svg";
 import Search from "/src/assets/img/Others/Search.svg";
 import LogIn from "/src/assets/img/Others/login.svg";
-import burgerOpen from "/public/burgerOpen.svg";
-import burgerClose from "/public/burgerClose.svg";
+import burgerOpen from "/src/assets/img/Mobile/burgerOpen.svg";
+import burgerClose from "/src/assets/img/Mobile/burgerClose.svg";
 import { useEffect, useState } from "react";
 import HeaderList from "./HeaderList/HeaderList";
 
 export default function Header() {
+
     const [isActive, setIsActive] = useState(false);
     useEffect(() => {
         if (isActive) {
@@ -51,13 +52,12 @@ export default function Header() {
                     id="burger"
                     className={styles.burger}
                     onClick={burgerBtn}
-                    style={{
-                        backgroundImage: `url(${
-                            isActive
-                                ? burgerClose
-                                : burgerOpen
-                        })`,
-                    }}
+                    // style={{
+                    //     backgroundImage: `url(${
+                    //         isActive ? burgerClose : burgerOpen
+                    //     })`,
+                    // }}
+                    style={{ backgroundImage: `url(${burgerClose})` }}
                 ></div>
                 <div
                     className={styles.btns}
