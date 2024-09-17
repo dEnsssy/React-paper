@@ -2,8 +2,8 @@ import styles from "./Heder.module.scss";
 import Logo from "/src/assets/img/PC/Logo.svg";
 import Search from "/src/assets/img/Others/Search.svg";
 import LogIn from "/src/assets/img/Others/login.svg";
-import burgerOpen from "/src/assets/img/Mobile/burgerOpen.svg";
-import burgerClose from "/src/assets/img/Mobile/burgerClose.svg";
+import burgerOpen from "/public/burgerOpen.svg";
+import burgerClose from "/public/burgerClose.svg";
 import { useEffect, useState } from "react";
 import HeaderList from "./HeaderList/HeaderList";
 
@@ -53,9 +53,9 @@ export default function Header() {
                     onClick={burgerBtn}
                     style={{
                         backgroundImage: `url(${
-                            !isActive
-                                ? "/src/assets/img/Mobile/burgerOpen.svg"
-                                : "/src/assets/img/Mobile/burgerClose.svg"
+                            isActive
+                                ? burgerClose
+                                : burgerOpen
                         })`,
                     }}
                 ></div>
