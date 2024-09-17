@@ -1,0 +1,36 @@
+@import "/src/assets/styles/_vars.scss";
+
+.materials {
+    background-color: #ebebeb;
+    &-content {
+        max-width: 1150px;
+        margin: 0 auto;
+        padding: 90px 20px;
+    }
+}
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 1090px) {
+    .materials {
+        &-content {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .materials {
+        &-content {
+            margin-top: 50px;
+        }
+    }
+}

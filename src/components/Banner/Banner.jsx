@@ -23,14 +23,6 @@ export default function Banner() {
                 <source srcSet={Image768} media="(max-width:768px)" />
                 <img src={Image} alt="Image" />
             </picture>
-            {/* <img src={Image} alt="" /> */}
-            <p id="qwe"
-            style={{marginTop:"1000px"}}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-                beatae reiciendis rem nam odio incidunt delectus unde nostrum
-                natus! Id culpa iste in ex corporis eum numquam perferendis,
-                similique minus!
-            </p>
         </section>
     );
 }
