@@ -87,6 +87,8 @@ h6 {
     src: url(../fonts/Roboto-Medium.ttf);
     font-weight: 500;
 }
-body {
+body,
+html {
     font-family: "Roboto";
+    scroll-behavior: smooth;
 }
