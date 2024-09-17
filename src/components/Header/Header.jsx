@@ -52,10 +52,11 @@ export default function Header() {
                     className={styles.burger}
                     onClick={burgerBtn}
                     style={{
-                        backgroundImage: `url(${burgerOpen})`,
-                        // backgroundImage: `url(${
-                        //     isActive ? burgerOpen : burgerOpen
-                        // })`,
+                        backgroundImage: `url(${
+                            !isActive
+                                ? "/src/assets/img/Mobile/burgerOpen.svg"
+                                : "/src/assets/img/Mobile/burgerClose.svg"
+                        })`,
                     }}
                 ></div>
                 <div
