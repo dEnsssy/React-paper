@@ -44,21 +44,28 @@ export default function Header() {
                     onClick={burgerBtn}
                 >
                     <li id="burgerCloser" className={styles["list-closer"]}>
-                        <img src={burgerOpen} alt="" />
+                        <img src={burgerClose} alt="" />
                     </li>
                     <HeaderList />
                 </ul>
-                <div
+                {/* <div
                     id="burger"
                     className={styles.burger}
                     onClick={burgerBtn}
-                    // style={{
-                    //     backgroundImage: `url(${
-                    //         isActive ? burgerClose : burgerOpen
-                    //     })`,
-                    // }}
+                    style={{
+                        backgroundImage: `url(${
+                            isActive ? burgerClose : burgerOpen
+                        })`,
+                    }}
                     style={{ backgroundImage: `url(${burgerClose})` }}
-                ></div>
+                ></div> */}
+                <img
+                    src={isActive ? burgerClose : burgerOpen}
+                    alt=""
+                    id="burger"
+                    className={styles.burger}
+                    onClick={burgerBtn}
+                />
                 <div
                     className={styles.btns}
                     style={{ display: isActive ? "none" : "flex" }}
