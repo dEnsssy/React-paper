@@ -53,7 +53,7 @@ export default function Header() {
                     onClick={burgerBtn}
                     style={{
                         backgroundImage: `url(${
-                            isActive ? "none" : burgerOpen
+                            !isActive ? burgerOpen : "none"
                         })`,
                     }}
                 ></div>
