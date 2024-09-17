@@ -44,7 +44,7 @@ export default function Header() {
                     onClick={burgerBtn}
                 >
                     <li id="burgerCloser" className={styles["list-closer"]}>
-                        <img src={burgerClose} alt="" />
+                        <img src={burgerOpen} alt="" />
                     </li>
                     <HeaderList />
                 </ul>
