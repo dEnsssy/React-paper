@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 import HeaderList from "./HeaderList/HeaderList";
 
 export default function Header() {
-
     const [isActive, setIsActive] = useState(false);
     useEffect(() => {
         if (isActive) {
@@ -48,23 +47,13 @@ export default function Header() {
                     </li>
                     <HeaderList />
                 </ul>
-                {/* <div
-                    id="burger"
-                    className={styles.burger}
-                    onClick={burgerBtn}
-                    style={{
-                        backgroundImage: `url(${
-                            isActive ? burgerClose : burgerOpen
-                        })`,
-                    }}
-                    style={{ backgroundImage: `url(${burgerClose})` }}
-                ></div> */}
                 <img
-                    src={isActive ? burgerClose : burgerOpen}
+                    src={burgerOpen}
                     alt=""
                     id="burger"
                     className={styles.burger}
                     onClick={burgerBtn}
+                    style={{ visibility: isActive ? "hidden" : "visible" }}
                 />
                 <div
                     className={styles.btns}
