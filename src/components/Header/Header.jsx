@@ -47,14 +47,26 @@ export default function Header() {
                     </li>
                     <HeaderList />
                 </ul>
-                <img
+                <div
+                    id="burger"
+                    className={styles.burger}
+                    onClick={burgerBtn}
+                    style={{
+                        backgroundImage: `url(${
+                            isActive ? burgerClose : burgerOpen
+                        })`,
+                        width: "30px",
+                        height: "30px",
+                    }}
+                ></div>
+                {/* <img
                     src={burgerOpen}
                     alt=""
                     id="burger"
                     className={styles.burger}
                     onClick={burgerBtn}
                     style={{ visibility: isActive ? "hidden" : "visible" }}
-                />
+                /> */}
                 <div
                     className={styles.btns}
                     style={{ display: isActive ? "none" : "flex" }}
